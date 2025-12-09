@@ -31,7 +31,8 @@ services:
       context: .
       dockerfile: fullstackdemo.client/Dockerfile
     ports:
-      - "4200:4200"
+      #-"4200:4200"
+      - "4200:80"
     depends_on:
       - backend
     networks:
